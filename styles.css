@@ -262,3 +262,7 @@ input:focus, select:focus, textarea:focus { outline: 0; border-color: #7c5cff; b
 .work.reveal.in { transition: transform .25s ease-out, box-shadow .4s; }
 @media (max-width: 720px) { .tile.h2 { min-height: 300px; } }
 .work > a { display: block; }
+
+/* Pricing offer */
+.was { display: flex; align-items: center; gap: 10px; font: 600 1.3rem var(--display); color: var(--muted); text-decoration: line-through; text-decoration-thickness: 2px; text-decoration-color: #ff6fa8; margin-bottom: 4px; }
+.save { text-decoration: none; display: inline-block; font: 700 .72rem 'Inter', sans-serif; letter-spacing: .04em; padding: 4px 10px; border-radius: 99px; background: var(--mint); color: #0b6b4a; }
