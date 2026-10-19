@@ -10,12 +10,7 @@ const SITE = {
 // Portfolio projects. theme: mint | peach | lav | sky | pink | butter
 // To use a real screenshot, add  image: 'images/my-project.jpg'  (and  url: 'https://...' to link a live demo,  host: 'shown-in-address-bar')
 const PROJECTS = [
-  { name: 'Fresh Bites Café',     cat: 'food',     tag: 'Restaurant',     theme: 'mint',   emoji: '☕', desc: 'Online menu, table reservations and Google Maps in one clean site.' },
-  { name: 'Glow Beauty Studio',   cat: 'services', tag: 'Salon & Beauty', theme: 'pink',   emoji: '💅', desc: 'Elegant service menu with a simple online booking request.' },
-  { name: 'IronCore Gym',         cat: 'health',   tag: 'Fitness',        theme: 'lav',    emoji: '💪', desc: 'Energetic design with class timetable and membership sign-up.' },
-  { name: 'Golden Thread Boutique', cat: 'retail', tag: 'Retail',         theme: 'butter', emoji: '👗', desc: 'Product showcase with WhatsApp ordering built right in.' },
-  { name: 'Smile Works Dental',   cat: 'health',   tag: 'Dental clinic',  theme: 'sky',    emoji: '🦷', desc: 'Calm, trustworthy design with online appointment requests.' },
-  { name: 'BrightHome Cleaning',  cat: 'services', tag: 'Home services',  theme: 'peach',  emoji: '✨', desc: 'Instant quote form that makes it easy to get in touch.' },
+  { name: 'FORGE Athletic', cat: 'health', tag: 'Gym', theme: 'lav', image: 'images/forge.jpg', url: 'https://fiastudios.github.io/gym/', host: 'fiastudios.github.io/gym', desc: 'Memberships, a live class board, coaches, and a free-week booking form.' },
 ];
 /* =================================================================== */
 
@@ -64,7 +59,7 @@ $$('[data-mock]').forEach(el => {
 /* ---------- Portfolio ---------- */
 const bg = { mint: '#d3f7e8', peach: '#ffe3d3', lav: '#e4dbff', sky: '#d3ebff', pink: '#ffd9ec', butter: '#fff3c4' };
 const card = p => {
-  const media = p.image ? browser(`<img src="${p.image}" alt="${p.name} website">`, p.url || '') : browser(mock(p.theme, p.emoji), p.host || p.name.toLowerCase().replace(/[^a-z0-9]+/g, '') + '.com');
+  const media = p.image ? browser(`<img class="shot" src="${p.image}" alt="${p.name} website">`, p.host || '') : browser(mock(p.theme, p.emoji), p.host || p.name.toLowerCase().replace(/[^a-z0-9]+/g, '') + '.com');
   const inner = `<div class="work-media" style="--c-bg:${bg[p.theme]}">${media}</div><div class="work-body"><span class="tg">${p.tag}</span><h3>${p.name}</h3><p>${p.desc}</p></div>`;
   return `<article class="work glass reveal" data-cat="${p.cat}" data-tilt>${p.url ? `<a href="${p.url}" target="_blank" rel="noopener">${inner}</a>` : inner}</article>`;
 };
