@@ -31,7 +31,7 @@ document.body.insertAdjacentHTML('afterbegin', `
   <div class="aurora"><i></i><i></i><i></i><i></i><i></i></div>
   <div class="cursor-glow"></div><div class="progress"></div>
   <header class="nav"><div class="nav-inner glass">
-    <a class="logo" href="index.html"><span class="logo-mark">✦</span>${SITE.name}</a>
+    <a class="logo" href="index.html"><span class="wm"><b>fia</b>studios<i>.</i></span></a>
     <nav class="nav-links">${nav.map(([h, t]) => `<a href="${h}" class="${h === page ? 'active' : ''}">${t}</a>`).join('')}</nav>
     <a class="btn btn-dark btn-sm nav-cta" href="contact.html">Get a free quote <span class="arr">→</span></a>
     <button class="menu-btn" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
@@ -39,12 +39,12 @@ document.body.insertAdjacentHTML('afterbegin', `
 document.body.insertAdjacentHTML('beforeend', `
   <footer class="footer"><div class="container">
     <div class="footer-grid">
-      <div><a class="logo" href="index.html"><span class="logo-mark">✦</span>${SITE.name}</a><p>Beautiful, fast websites for businesses that want to grow online.</p></div>
+      <div><a class="logo" href="index.html"><span class="wm"><b>fia</b>studios<i>.</i></span></a><p>Beautiful, fast websites for businesses that want to grow online.</p></div>
       <div><h4>Pages</h4><ul>${nav.map(([h, t]) => `<li><a href="${h}">${t}</a></li>`).join('')}</ul></div>
       <div><h4>Get in touch</h4><ul><li><a href="mailto:${SITE.email}">${SITE.email}</a></li><li><a href="tel:${SITE.phone.replace(/\s/g, '')}">${SITE.phone}</a></li><li><a href="https://wa.me/${SITE.whatsapp}" target="_blank" rel="noopener">WhatsApp</a></li></ul></div>
     </div>
     <div class="copy"><span>© ${new Date().getFullYear()} ${SITE.name}. All rights reserved.</span><span>Designed with care.</span></div>
-  </div><div class="wordmark">${SITE.name}</div></footer>`);
+  </div><div class="wordmark" aria-hidden="true">fiastudios.</div></footer>`);
 
 const menuBtn = $('.menu-btn'), links = $('.nav-links');
 menuBtn.addEventListener('click', () => menuBtn.setAttribute('aria-expanded', links.classList.toggle('open')));
