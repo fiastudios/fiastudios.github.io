@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Launchpad</title>
+  <meta name="description" content="Get a free, no-obligation website quote. We reply within 24 hours.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+<section class="page-hero">
+  <div class="container">
+    <span class="pill"><span class="dot"></span>We reply within 24 hours</span>
+    <h1>Let's build your <span class="serif grad">website</span></h1>
+    <p class="lead">Tell us a little about your business and get a free, no-obligation quote.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:40px">
+  <div class="container contact-grid">
+    <div class="reveal">
+      <h2 style="font-size:2.2rem">Prefer to <span class="serif grad">talk?</span></h2>
+      <p class="lead" style="margin-top:12px">Reach out whichever way is easiest for you.</p>
+      <div class="info" id="info"></div>
+    </div>
+
+    <div class="form glass reveal" style="--d:.1s">
+      <form id="contact-form">
+        <div class="row">
+          <div class="field"><label for="name">Your name *</label><input id="name" name="name" required placeholder="Jane Smith"></div>
+          <div class="field"><label for="business">Business name</label><input id="business" name="business" placeholder="Smith's Bakery"></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="email">Email *</label><input id="email" name="email" type="email" required placeholder="jane@example.com"></div>
+          <div class="field"><label for="phone">Phone / WhatsApp</label><input id="phone" name="phone" type="tel" placeholder="+1 555 000 0000"></div>
+        </div>
+        <div class="field">
+          <label for="plan">Package of interest</label>
+          <select id="plan" name="plan"><option>Not sure yet</option><option>Starter</option><option>Business</option><option>Premium</option></select>
+        </div>
+        <div class="field"><label for="message">Tell us about your project *</label><textarea id="message" name="message" required placeholder="What does your business do? Do you have a website now? Anything you'd love on the new one?"></textarea></div>
+        <button class="btn btn-dark btn-block" type="submit">Send my request <span class="arr">→</span></button>
+        <p class="form-note">No spam, no pressure. Your details stay private.</p>
+      </form>
+      <div class="success"><div class="big">🎉</div><h3>Thank you!</h3><p class="lead" style="margin:10px auto 0">We've got your request and will be in touch within 24 hours.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+<script src="script.js"></script>
+<script>
+  document.getElementById('info').innerHTML = `
+    <a href="mailto:${SITE.email}"><span class="ic">✉️</span><span><small>Email</small><strong>${SITE.email}</strong></span></a>
+    <a href="https://wa.me/${SITE.whatsapp}" target="_blank" rel="noopener"><span class="ic">💬</span><span><small>WhatsApp</small><strong>${SITE.phone}</strong></span></a>
+    <a href="tel:${SITE.phone.replace(/\s/g, '')}"><span class="ic">📞</span><span><small>Phone</small><strong>${SITE.phone}</strong></span></a>
+    <div><span class="ic">⏱️</span><span><small>Response time</small><strong>Within 24 hours</strong></span></div>`;
+</script>
+</body>
+</html>
