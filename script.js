@@ -10,7 +10,7 @@ const SITE = {
 // Portfolio projects. theme: mint | peach | lav | sky | pink | butter
 // To use a real screenshot, add  image: 'images/my-project.jpg'  (and  url: 'https://...' to link a live demo,  host: 'shown-in-address-bar')
 const PROJECTS = [
-  { name: 'Sweet Crumb Bakery',   cat: 'food',     tag: 'Bakery · Live demo', theme: 'peach', emoji: '🥐', desc: 'Warm, mouth-watering menu with opening hours and online ordering.', url: 'https://fiastudios.github.io/bakery-demo/', host: 'fiastudios.github.io/bakery-demo' },
+  { name: 'Fresh Bites Café',     cat: 'food',     tag: 'Restaurant',     theme: 'mint',   emoji: '☕', desc: 'Online menu, table reservations and Google Maps in one clean site.' },
   { name: 'Glow Beauty Studio',   cat: 'services', tag: 'Salon & Beauty', theme: 'pink',   emoji: '💅', desc: 'Elegant service menu with a simple online booking request.' },
   { name: 'IronCore Gym',         cat: 'health',   tag: 'Fitness',        theme: 'lav',    emoji: '💪', desc: 'Energetic design with class timetable and membership sign-up.' },
   { name: 'Golden Thread Boutique', cat: 'retail', tag: 'Retail',         theme: 'butter', emoji: '👗', desc: 'Product showcase with WhatsApp ordering built right in.' },
