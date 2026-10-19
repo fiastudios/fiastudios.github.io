@@ -1,6 +1,6 @@
 /* =====================  EDIT YOUR DETAILS HERE  ===================== */
 const SITE = {
-  name: 'Launchpad',                 // your brand name
+  name: 'Fia Studios',                 // your brand name
   email: 'hello@yourdomain.com',
   phone: '+1 000 000 0000',
   whatsapp: '10000000000',           // digits only, with country code

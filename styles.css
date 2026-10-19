@@ -230,7 +230,7 @@ input:focus, select:focus, textarea:focus { outline: 0; border-color: #7c5cff; b
 .footer h4 { font: 700 .8rem 'Inter'; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 16px; color: var(--muted); }
 .footer ul { list-style: none; display: grid; gap: 10px; } .footer ul a { transition: color .2s; } .footer ul a:hover { color: #7c5cff; }
 .copy { margin-top: 56px; padding: 22px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: .86rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
-.wordmark { font: 800 clamp(5rem, 22vw, 17rem)/.8 var(--display); letter-spacing: -.07em; text-align: center; background: linear-gradient(180deg, rgba(124,92,255,.22), rgba(124,92,255,0)); -webkit-background-clip: text; background-clip: text; color: transparent; margin-top: 10px; user-select: none; }
+.wordmark { font: 800 clamp(3.4rem, 14vw, 12.5rem)/.85 var(--display); letter-spacing: -.07em; text-align: center; background: linear-gradient(180deg, rgba(124,92,255,.22), rgba(124,92,255,0)); -webkit-background-clip: text; background-clip: text; color: transparent; margin-top: 10px; user-select: none; }
 
 /* Reveal */
 .reveal { opacity: 0; transform: translateY(34px); transition: opacity .9s var(--ease), transform .9s var(--ease); transition-delay: var(--d, 0s); }
