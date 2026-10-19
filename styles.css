@@ -261,3 +261,4 @@ input:focus, select:focus, textarea:focus { outline: 0; border-color: #7c5cff; b
 /* Tilt cards need a snappy transform once revealed */
 .work.reveal.in { transition: transform .25s ease-out, box-shadow .4s; }
 @media (max-width: 720px) { .tile.h2 { min-height: 300px; } }
+.work > a { display: block; }
