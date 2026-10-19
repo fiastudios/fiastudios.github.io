@@ -163,6 +163,7 @@ h3 { font-size: 1.3rem; letter-spacing: -.02em; }
 .fchip:hover { color: var(--ink); transform: translateY(-2px); } .fchip.active { background: var(--ink); color: #fff; box-shadow: 0 12px 26px -12px rgba(26,21,56,.6); }
 .work-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
 .work-grid:has(> .work:only-child) { grid-template-columns: minmax(0, 640px); justify-content: center; }
+.work-grid:has(> .work:nth-child(2):last-child) { grid-template-columns: repeat(2, minmax(0, 560px)); justify-content: center; }
 .work { border-radius: 30px; padding: 14px; transition: transform .4s var(--ease), box-shadow .4s; transform-style: preserve-3d; will-change: transform; }
 .work.hide { display: none; }
 .work-media { border-radius: 22px; padding: 26px 22px 0; position: relative; overflow: hidden; background: var(--c-bg); }
