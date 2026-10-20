@@ -10,6 +10,7 @@ const SITE = {
 // Portfolio projects. theme: mint | peach | lav | sky | pink | butter
 // To use a real screenshot, add  image: 'images/my-project.jpg'  (and  url: 'https://...' to link a live demo,  host: 'shown-in-address-bar')
 const PROJECTS = [
+  { name: 'Oriel', cat: 'dining', tag: 'Waterfront Dining', theme: 'peach', image: 'images/oriel.jpg', url: 'https://fiastudios.github.io/oriel/', host: 'fiastudios.github.io/oriel', desc: 'A sunlit bay restaurant: typeset menu, terrace table map, and a reservation board that knows the hours.' },
   { name: 'Atelier Soren', cat: 'design', tag: 'Interior Architecture', theme: 'butter', image: 'images/interior.jpg', url: 'https://fiastudios.github.io/interior/', host: 'fiastudios.github.io/interior', desc: 'Bespoke residences, an interactive before & after slider, material provenance library, and commission scope estimator.' },
   { name: 'FORGE Athletic', cat: 'health', tag: 'Gym & Club', theme: 'lav', image: 'images/forge.jpg', url: 'https://fiastudios.github.io/gym/', host: 'fiastudios.github.io/gym', desc: 'Memberships, a live class board, coaches, and a free-week booking form.' },
 ];
